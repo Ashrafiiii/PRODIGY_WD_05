@@ -1,0 +1,107 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a2d5f2; /* Light blue background */
+    background-image: linear-gradient(180deg, #a2d5f2 0%, #83a4d4 100%); /* Gradient effect */
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto; /* Center the container */
+}
+
+/* Header styles */
+h1 {
+    margin-bottom: 20px;
+    color: #3e5772; /* Dark blue text */
+}
+
+/* Search wrapper styles */
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Text input styles */
+#city-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #3e5772; /* Dark blue border */
+    border-radius: 5px;
+}
+
+/* Button styles */
+#search-btn, #location-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn {
+    background-color: #3e5772; /* Dark blue button */
+    color: #fff;
+}
+
+#location-btn {
+    background-color: #83a4d4; /* Light blue button */
+    color: #3e5772;
+}
+
+#search-btn:hover, #location-btn:hover {
+    background-color: #21425f; /* Dark blue hover effect */
+}
+
+/* Weather info container styles */
+#weather-info {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    color: #3e5772; /* Dark blue text */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+/* Weather detail styles */
+.weather-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add gap between weather details */
+    align-items: center;
+}
+
+.weather-detail span {
+    font-weight: bold;
+}
+
+/* Value styles */
+.value {
+    color: #007bff; /* Blue text for values */
+}
+
+/* Animation for weather details */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.weather-detail {
+    animation: fadeInUp 0.5s ease forwards;
+}
